@@ -1,0 +1,168 @@
+{
+    "name" : "蚂蚁包装",
+    "appid" : "__UNI__860B04B",
+    "description" : "",
+    "versionName" : "1.0.33",
+    "versionCode" : 201,
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : false,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "OAuth" : {},
+            "Contacts" : {},
+            "Push" : {},
+            "Messaging" : {},
+            "Share" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_SMS\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.SEND_SMS\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SMS\"/>"
+                ],
+                "abiFilters" : [ "armeabi-v7a", "arm64-v8a", "x86" ],
+                "schemes" : "com.zhunongba.mayi"
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "urltypes" : "com.zhunongba.mayi",
+                "idfa" : true
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "oauth" : {
+                    "weixin" : {
+                        "appid" : "wx35304d4adf2c6d04",
+                        "appsecret" : "9bfdb4c5668b514f0e90f118bd0c45e4",
+                        "UniversalLinks" : "https://www.zhunongba.com/mayiapp/"
+                    }
+                },
+                "push" : {
+                    "unipush" : {}
+                },
+                "ad" : {},
+                "share" : {
+                    "weixin" : {
+                        "appid" : "wx35304d4adf2c6d04",
+                        "UniversalLinks" : "https://www.zhunongba.com/mayiapp/"
+                    }
+                }
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            },
+            "splashscreen" : {
+                "android" : {
+                    "hdpi" : "/Users/noah/Documents/工作/老田/SAAS/ICON-LOGO/02-安卓设备尺寸启动页（3个）/01-480X762-hdpi高分屏.png",
+                    "xhdpi" : "/Users/noah/Documents/工作/老田/SAAS/ICON-LOGO/02-安卓设备尺寸启动页（3个）/02-720X1242-xhdpi-720P高分屏.png",
+                    "xxhdpi" : "/Users/noah/Documents/工作/老田/SAAS/ICON-LOGO/02-安卓设备尺寸启动页（3个）/03-1080X1882-xxhdpi-1080P高分屏.png"
+                },
+                "ios" : {
+                    "iphone" : {
+                        "portrait-896h@3x" : "/Users/noah/Documents/工作/老田/SAAS/ICON-LOGO/01-iPhone设备尺寸启动页（7个）/07-1242X2688-6.5英寸设备.png",
+                        "portrait-896h@2x" : "/Users/noah/Documents/工作/老田/SAAS/ICON-LOGO/01-iPhone设备尺寸启动页（7个）/06-828X1792-6.1英寸设备.png",
+                        "iphonex" : "/Users/noah/Documents/工作/老田/SAAS/ICON-LOGO/01-iPhone设备尺寸启动页（7个）/05-1125X2436-5.8英寸设备.png",
+                        "retina55" : "/Users/noah/Documents/工作/老田/SAAS/ICON-LOGO/01-iPhone设备尺寸启动页（7个）/04-1242x2208-5.5英寸设备.png",
+                        "retina47" : "/Users/noah/Documents/工作/老田/SAAS/ICON-LOGO/01-iPhone设备尺寸启动页（7个）/03-750X1334-4.7英寸设备.png",
+                        "retina40" : "/Users/noah/Documents/工作/老田/SAAS/ICON-LOGO/01-iPhone设备尺寸启动页（7个）/02-640X1136-4.0英寸设备.png",
+                        "retina35" : "/Users/noah/Documents/工作/老田/SAAS/ICON-LOGO/01-iPhone设备尺寸启动页（7个）/01-640X960-3.5英寸设备.png"
+                    }
+                },
+                "iosStyle" : "common"
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "wxd69f4284d1b17412",
+        "setting" : {
+            "urlCheck" : false
+        },
+        "usingComponents" : true
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "h5" : {
+        "router" : {
+            "base" : "./",
+            "mode" : "hash"
+        },
+        "domain" : ""
+    }
+}

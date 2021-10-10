@@ -1,0 +1,211 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/user/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+		    "path" : "pages/user/role",
+		    "style" : {
+				"navigationBarTitleText": "账号申请"
+			}
+		},
+		{
+		    "path" : "pages/home/home",
+		    "style" : {
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"titleNView" : false,
+				"bounce" : "none",
+				"scrollIndicator" : "none",
+				"navigationStyle" : "custom"
+			}
+		},
+		{
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/message/chat",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/message/chatGroup",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/my/rank",
+			"style": {
+				"navigationBarTitleText": "事业合伙人排名"
+			}
+		},
+		{
+			"path": "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path": "pages/order/checkout",
+			"style": {
+				"navigationBarTitleText": "我要下单"
+			}
+		}
+	    ,{
+            "path" : "pages/invoice/invoice",
+            "style" : {
+				"navigationBarTitleText": "我要开票"
+			}
+        }
+        ,{
+            "path" : "pages/order/detail",
+            "style" : {
+				"navigationBarTitleText": "订单详情"
+			}
+        }
+        ,{
+            "path" : "pages/my/income",
+            "style" : {
+				"navigationBarTitleText":"我的收益"
+			}
+        }
+        ,{
+            "path" : "pages/user/seller_apply",
+            "style" : {
+				"navigationBarTitleText":"事业合伙人账号申请"
+			}
+        }
+        ,{
+            "path" : "pages/user/invite",
+            "style" : {
+				"navigationBarTitleText":"邀请好友"
+			}
+        }
+        ,{
+            "path" : "pages/user/supplier_apply",
+            "style" : {
+				"navigationBarTitleText":"供应商账号申请"
+			}
+        }
+        ,{
+            "path" : "pages/user/customer_apply",
+            "style" : {
+				"navigationBarTitleText":"包装用户账号申请"
+			}
+        }
+        ,{
+            "path" : "pages/order/goods",
+            "style" : {
+				"navigationBarTitleText":"我要下单"
+			}
+        }
+        ,{
+            "path" : "pages/address/address",
+            "style" : {
+				"navigationBarTitleText":"地址管理"
+			}
+        }
+        ,{
+            "path" : "pages/address/edit/edit",
+            "style" : {
+				"navigationBarTitleText":"编辑收件人地址"
+			}
+        }
+        ,{
+            "path" : "pages/update/update",
+            "style" : {
+				"navigationBarTitleText": "更新提示"
+			}
+        }
+        ,{
+            "path" : "pages/order/recheckout",
+            "style" : {
+				"navigationBarTitleText": "再来一单"
+			}
+		},
+		{
+            "path" : "pages/my/aboutApp/aboutApp",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/my/changeInfo",
+            "style" : {
+				"navigationBarTitleText": "修改信息"
+			}
+        }
+        ,{
+            "path" : "pages/my/changePhone",
+            "style" : {
+				"navigationBarTitleText": "修改手机"
+			}
+        }
+        ,{
+            "path" : "pages/my/column/column",
+            "style" : {
+				"navigationBarTitleText": "成交销售额度"
+			}
+        }
+        ,{
+            "path" : "pages/my/feedback",
+            "style" : {
+				"navigationBarTitleText": "在线反馈"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#fff",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#6B7374",
+		"selectedColor": "#3688FF",
+		"borderStyle": "white",
+		"backgroundColor": "#fff",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/l-home.png",
+				"selectedIconPath": "static/l-home-active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/message/message",
+				"iconPath": "static/l-chats.png",
+				"selectedIconPath": "static/l-chats-actvie.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/l-mine.png",
+				"selectedIconPath": "static/l-mine-active.png",
+				"text": "我的"
+			}
+		]
+	},
+	"easycom": {
+		"custom": {
+			"autoscan": true,
+			"grace(.*)": "@/graceUI/components/grace$1.vue"
+		}
+	}
+}
